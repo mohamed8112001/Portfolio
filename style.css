@@ -136,7 +136,7 @@ nav a:hover {
     flex-wrap: wrap;
     min-height: 100vh;
     text-align: center;
-    box-sizing: border-box; /* لضمان عدم تجاوز العناصر الحدود */
+    box-sizing: border-box; 
 }
 
 .info {
@@ -175,7 +175,7 @@ nav a:hover {
     font-weight: bold;
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block; /* التأكد من أن الزر لا يتجاوز الحدود */
+    display: inline-block; 
 }
 
 .info button:hover {
@@ -191,7 +191,7 @@ nav a:hover {
     border-radius: 50%;
     background-position: center;
     box-shadow: 0 0 30px rgba(201, 124, 93, 0.6);
-    margin-top: 20px; /* إضافة هامش علوي لتجنب التداخل */
+    margin-top: 20px;
 }
 
 .skills-tech {
@@ -490,9 +490,8 @@ max-width: 90%;
 
 .project-item:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);  /* تأثير الظل */
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);  
 }
-/* */
 
 .project-item h3 {
     margin-top: 20px;
