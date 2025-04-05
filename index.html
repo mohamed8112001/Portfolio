@@ -240,14 +240,14 @@
             document.body.classList.toggle('light-mode');
         });
         // Show the button when scrolling down
-        // window.onscroll = function () {
-        //     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        //         scrollToTopBtn.style.display = "block";
-        //     } else {
-        //         scrollToTopBtn.style.display = "none";
-        //     }
-        // };
+        window.onscroll = function () {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
 
         // Scroll to the top when clicked
         document.getElementById("scrollToTopBtn").addEventListener("click", function () {
