@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio of Mohamed Mustafa, a Full-Stack Developer specializing in web development with HTML, CSS, JavaScript, PHP, and more.">
+    <meta name="keywords" content="web developer, full-stack developer, portfolio, Mohamed Mustafa">
+    <title>Mohamed Mustafa - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="arrow">
         <a href="#nav" id="scrollToTopBtn">
-            <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Icon -->
+            <i class="fas fa-arrow-up"></i>
         </a>
     </div>
 
     <nav id="nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="javascript:void(0);" id="toggleMode">
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="toggleMode">
                     <i class="fas fa-sun" id="light-icon"></i>
                     <i class="fas fa-moon" id="dark-icon" style="display:none;"></i>
                     Mood
-                </a></li> <!-- Updated Mood link with icons -->
-        </ul>
-    </nav>
-    <section class="home" id="home">
-        <div class="image">
+                </a></li>
+            </ul>
         </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="image"></div>
         <div class="info">
-            <h1> Mohamed Mustafa
-            </h1>
+            <h1 id="animated-name"></h1>
             <h2>Full-Stack Developer</h2>
-            <p>I am Mohamed Mustafa, a web developer specializing in building websites using modern technologies such as
-                HTML, CSS, JavaScript, PHP, and MySQL. I have extensive experience in developing full-fledged websites
-                based on client requirements and work on debugging, modifying, and optimizing the performance of
-                existing sites. I believe in delivering innovative and practical solutions to improve user experience
-                and enhance website effectiveness.</p>
-                <a href="path_to_your_file/your_file.ext" download="desired_filename.ext">
-                    <button> <i class="fas fa-download"></i>  Download CV</button>
-                </a>
-            <!-- <button>Download CV</button> -->
+            <p>I am Mohamed Mustafa, a web developer specializing in building websites using modern technologies such as HTML, CSS, JavaScript, PHP, and MySQL. I have extensive experience in developing full-fledged websites based on client requirements and work on debugging, modifying, and optimizing the performance of existing sites. I believe in delivering innovative and practical solutions to improve user experience and enhance website effectiveness.</p>
+            <a href="path/to/your-cv.pdf" download="Mohamed_Mustafa_CV.pdf">
+                <button><i class="fas fa-download"></i> Download CV</button>
+            </a>
             <button>Self Introduction</button>
         </div>
-       
         <div class="clear-fix"></div>
     </section>
+
     <section class="skills" id="skills">
         <h2>💻 Technical Skills</h2>
         <div class="skills-tech">
-            <p>The Skills, tools and technologies I use:</p>
+            <p>The skills, tools, and technologies I use:</p>
             <div class="icons">
                 <i class="devicon-python-plain colored"></i>
                 <i class="devicon-java-plain colored"></i>
                 <i class="devicon-php-plain colored"></i>
-                <!-- HTML, CSS, JavaScript -->
                 <i class="devicon-html5-plain colored"></i>
                 <i class="devicon-css3-plain colored"></i>
                 <i class="devicon-javascript-plain colored"></i>
-
-                <!-- Frontend Frameworks -->
                 <i class="devicon-bootstrap-plain colored"></i>
                 <i class="devicon-react-original colored"></i>
                 <i class="devicon-vuejs-plain colored"></i>
-
-                <!-- Backend Languages -->
                 <i class="devicon-laravel-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
-                <i class="devicon-java-plain colored"></i>
                 <i class="devicon-cplusplus-plain colored"></i>
                 <i class="devicon-c-plain colored"></i>
-
-                <!-- Databases -->
                 <i class="devicon-mysql-plain colored"></i>
                 <i class="devicon-postgresql-plain colored"></i>
                 <i class="devicon-mongodb-plain colored"></i>
-
-                <!-- Servers -->
                 <i class="devicon-apache-plain colored"></i>
                 <i class="devicon-nginx-original colored"></i>
-
-                <!-- Tools & Platforms -->
                 <i class="devicon-linux-plain colored"></i>
                 <i class="devicon-git-plain colored"></i>
                 <i class="devicon-github-original colored"></i>
@@ -96,8 +83,6 @@
                 <i class="devicon-wordpress-plain colored"></i>
                 <i class="devicon-ubuntu-plain colored"></i>
                 <i class="devicon-vscode-plain colored"></i>
-
-                <!-- Others -->
                 <i class="devicon-nodejs-plain colored"></i>
                 <i class="devicon-bash-plain colored"></i>
                 <i class="devicon-figma-plain colored"></i>
@@ -107,211 +92,257 @@
                     <div class="container">
                         <h2>🧠 Personal Skills</h2>
                         <ul class="skills-list">
-                            <li><span>✔️</span> <strong>Effective Communication</strong> – Clear explanation of
-                                technical concepts.</li>
-                            <li><span>✔️</span> <strong>Teamwork & Collaboration</strong> – Working well with others.
-                            </li>
+                            <li><span>✔️</span> <strong>Effective Communication</strong> – Clear explanation of technical concepts.</li>
+                            <li><span>✔️</span> <strong>Teamwork & Collaboration</strong> – Working well with others.</li>
                             <li><span>✔️</span> <strong>Problem Solving</strong> – Logical and creative solutions.</li>
-                            <li><span>✔️</span> <strong>Time Management</strong> – Prioritizing and meeting deadlines.
-                            </li>
-                            <li><span>✔️</span> <strong>Adaptability & Learning</strong> – Fast learner, always
-                                improving.</li>
+                            <li><span>✔️</span> <strong>Time Management</strong> – Prioritizing and meeting deadlines.</li>
+                            <li><span>✔️</span> <strong>Adaptability & Learning</strong> – Fast learner, always improving.</li>
                             <li><span>✔️</span> <strong>Attention to Detail</strong> – Clean and error-free code.</li>
-                            <li><span>✔️</span> <strong>Work Under Pressure</strong> – Calm and focused under stress.
-                            </li>
-                            <li><span>✔️</span> <strong>Adaptability & Learning</strong> – Fast learner, always
-                                improving.</li>
-                            <li><span>✔️</span> <strong>Attention to Detail</strong> – Clean and error-free code.</li>
-                            <li><span>✔️</span> <strong>Creative Thinking</strong> – Fresh ideas and unique solutions.
-                            </li>
+                            <li><span>✔️</span> <strong>Work Under Pressure</strong> – Calm and focused under stress.</li>
+                            <li><span>✔️</span> <strong>Creative Thinking</strong> – Fresh ideas and unique solutions.</li>
                         </ul>
                     </div>
                 </section>
             </div>
         </div>
     </section>
-    <!-- <hr> -->
 
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-
             <div class="project-list">
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/Restutant.png" alt="Project Screenshot">
+                        <img src="images/Restutant.png" alt="Restaurant Website Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Restaurant Website</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/cafee.png" alt="Project Screenshot">
+                        <img src="images/cafee.png" alt="Cafe Website Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Cafe Website</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/Hospital.png" alt="Project Screenshot">
+                        <img src="images/Hospital.png" alt="Hospital Website Screenshot">
                     </div>
                     <div class="line"></div>
-                    <!-- <a href="https://mohamed8112001.github.io/Hospital/">go to live</a> -->
-                    <h3>Website Code</h3>
+                    <h3>Hospital Website</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/baking.png" alt="Project Screenshot">
+                        <img src="images/baking.png" alt="Baking Website Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Baking Website</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/Pure Photography.png" alt="Project Screenshot">
+                        <img src="images/Pure Photography.png" alt="Photography Website Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Photography Website</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/Product Managment.png" alt="Project Screenshot">
+                        <img src="images/Product Managment.png" alt="Product Management Dashboard Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="images/sales.png" alt="Project Screenshot">
-                    </div>
-                    <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Product Management</h3>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/mario.png" alt="Project Screenshot">
+                        <img src="images/sales.png" alt="Sales Dashboard Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Sales Dashboard</h3>
                 </div>
-
-
-
-
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="images/portfolio.png" alt="Project Screenshot">
+                        <img src="images/mario.png" alt="Mario Game Screenshot">
                     </div>
                     <div class="line"></div>
-                    <h3>Website Code</h3>
+                    <h3>Mario Game</h3>
                 </div>
-
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/portfolio.png" alt="Portfolio Website Screenshot">
+                    </div>
+                    <div class="line"></div>
+                    <h3>Portfolio Website</h3>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-info">
                 <h2>Do You Have A Project To Discuss?</h2>
                 <div>
-                
                     <a href="mailto:mohamedmustafa8112001@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                      </a>
-
+                        <i class="fas fa-envelope" style="font-size: 64px;"></i>
+                    </a>
                 </div>
                 <div class="social-media">
-                    <a href="https://www.facebook.com/profile.php?id=100012835330460" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://x.com/Mohamed81120?t=7SfSURT7flvav1uRh9IJAQ&s=09" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100012835330460" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/Mohamed81120?t=7SfSURT7flvav1uRh9IJAQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/mohamed-mustafa-2372a2260/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/mohamed_mustafa811?igsh=Mmt4YmE4ZmZ0Zmhj" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/mohamed_mustafa811?igsh=Mmt4YmE4ZmZ0Zmhj" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://github.com/mohamed8112001" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://wa.me/201016845129" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.upwork.com/freelancers/~017d99573368173798?mp_source=share" target="_blank">
-                        <i class="fas fa-briefcase"></i>
-                    </a>
-
-                    <a href="https://mostaql.com/u/m_mustafa11" target="_blank">
-                        <i class="fas fa-user-tie"></i>
-                    </a>
-
-                    <a href="https://khamsat.com/user/m_mustafa11" target="_blank">
-                        <i class="fas fa-handshake"></i>
-                    </a>
+                    <a href="https://www.upwork.com/freelancers/~017d99573368173798?mp_source=share" target="_blank"><i class="fas fa-briefcase"></i></a>
+                    <a href="https://mostaql.com/u/m_mustafa11" target="_blank"><i class="fas fa-user-tie"></i></a>
+                    <a href="https://khamsat.com/user/m_mustafa11" target="_blank"><i class="fas fa-handshake"></i></a>
                 </div>
-
             </div>
             <div class="form">
                 <h2>Contact Form</h2>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name"><br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"><br>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
                     <button type="submit">Send</button>
+                    <p id="form-message"></p>
                 </form>
             </div>
             <div class="clear-fix"></div>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        const toggleButton = document.getElementById('toggleMode');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-        });
-        // Show the button when scrolling down
-        window.onscroll = function () {
-            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
+        // Particle.js configuration
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ff6f61" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#ff6f61", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
             }
-        };
-
-        // Scroll to the top when clicked
-        document.getElementById("scrollToTopBtn").addEventListener("click", function () {
-            window.scrotoggleButton.addEventListener('click', () => {
-                if (document.body.classList.contains('dark-theme')) {
-                    document.body.classList.remove('dark-theme');
-                    localStorage.setItem('theme', 'light');
-                    darkIcon.style.display = 'none'; // Hide moon icon
-                    lightIcon.style.display = 'inline'; // Show sun icon
-                } else {
-                    document.body.classList.add('dark-theme');
-                    localStorage.setItem('theme', 'dark');
-                    darkIcon.style.display = 'inline'; // Show moon icon
-                    lightIcon.style.display = 'none'; // Hide sun icon
-                }
-            }); llTo({ top: 0, behavior: "smooth" });
         });
+
+        // Typing effect for name
+        const name = "Mohamed Mustafa";
+        const animatedName = document.getElementById("animated-name");
+        let index = 0;
+
+        function typeLetterByLetter() {
+            if (index < name.length) {
+                animatedName.innerHTML += name[index] === " " ? " " : name[index];
+                index++;
+                setTimeout(typeLetterByLetter, 150);
+            } else {
+                animatedName.classList.add("blink-cursor");
+            }
+        }
+
+        // Theme toggle
+        const toggleButton = document.getElementById('toggleMode');
         const lightIcon = document.getElementById('light-icon');
         const darkIcon = document.getElementById('dark-icon');
 
-        // Check if the dark mode is enabled
-        const isDarkMode = localStorage.getItem('theme') === 'dark';
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            darkIcon.style.display = 'inline';
+            lightIcon.style.display = 'none';
+        }
+
         toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
             if (document.body.classList.contains('dark-theme')) {
-                document.body.classList.remove('dark-theme');
-                localStorage.setItem('theme', 'light');
-                darkIcon.style.display = 'none'; // Hide moon icon
-                lightIcon.style.display = 'inline'; // Show sun icon
-            } else {
-                document.body.classList.add('dark-theme');
                 localStorage.setItem('theme', 'dark');
-                darkIcon.style.display = 'inline'; // Show moon icon
-                lightIcon.style.display = 'none'; // Hide sun icon
+                darkIcon.style.display = 'inline';
+                lightIcon.style.display = 'none';
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkIcon.style.display = 'none';
+                lightIcon.style.display = 'inline';
             }
+            // Update hamburger icon color
+            document.querySelectorAll('.hamburger span').forEach(span => {
+                span.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--text-color');
+            });
         });
+
+        // Scroll to top
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = () => {
+            scrollToTopBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+        };
+
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('nav-list');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        // Close menu when clicking a nav link
+        document.querySelectorAll('#nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navList.classList.remove('active');
+            });
+        });
+
+        // Form Validation
+        const form = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                formMessage.style.display = 'block';
+                formMessage.style.color = 'red';
+                formMessage.textContent = 'Please fill out all fields.';
+                return;
+            }
+
+            // Basic email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                formMessage.style.display = 'block';
+                formMessage.style.color = 'red';
+                formMessage.textContent = 'Please enter a valid email address.';
+                return;
+            }
+
+            // If validation passes, submit the form
+            formMessage.style.display = 'block';
+            formMessage.style.color = 'green';
+            formMessage.textContent = 'Form submitted successfully!';
+            form.submit(); // Submit the form to Formspree
+        });
+
+        // Initialize typing effect
+        window.onload = () => {
+            animatedName.innerHTML = "";
+            typeLetterByLetter();
+        };
     </script>
 </body>
-
 </html>
